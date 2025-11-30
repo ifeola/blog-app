@@ -4,30 +4,43 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>NeonNote</title>
-		<link
-			rel="shortcut icon"
-			href="./assets/token--neon-evm.svg"
-			type="image/x-icon" />
+		<link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="header">
+			<div class="header backdrop">
 				<header>
 					<a href="#" class="logo">
 						<div class="logo-image">
-							<img src="./assets/token--neon-evm.svg" alt="" />
+							<img src="./assets/logo.svg" alt="" />
 						</div>
 						<span class="logo-text">NeonNote</span>
 					</a>
-					<nav>
+					<nav id="nav__menu">
 						<ul>
-							<li><a href="">About</a></li>
-							<li><a href="">Posts</a></li>
-							<li><a href="">Newsletter</a></li>
-							<li><a href="">Jobs</a></li>
+							<li><a href="./pages/about.html">About</a></li>
+							<li><a href="./pages/posts.html">Posts</a></li>
+							<li><a href="./pages/newletter.html">Newsletter</a></li>
+							<li><a href="./pages/jobs.html">Jobs</a></li>
 						</ul>
 					</nav>
+
+					<button id="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24">
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M20 12H10m10-7H4m16 14H4" />
+						</svg>
+					</button>
 				</header>
 			</div>
 			<div class="main">
@@ -67,6 +80,128 @@
 						</div>
 					</section>
 
+					<section class="value">
+						<div class="value__wrapper container">
+							<h2 class="value__title">Why This Blog Is Different</h2>
+							<ul class="value__list">
+								<li class="value__item backdrop">
+									<div class="value__item-top">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="m13.087 21.388l.542-.916c.42-.71.63-1.066.968-1.262c.338-.197.763-.204 1.613-.219c1.256-.021 2.043-.098 2.703-.372a5 5 0 0 0 2.706-2.706C22 14.995 22 13.83 22 11.5v-1c0-3.273 0-4.91-.737-6.112a5 5 0 0 0-1.65-1.651C18.41 2 16.773 2 13.5 2h-3c-3.273 0-4.91 0-6.112.737a5 5 0 0 0-1.651 1.65C2 5.59 2 7.228 2 10.5v1c0 2.33 0 3.495.38 4.413a5 5 0 0 0 2.707 2.706c.66.274 1.447.35 2.703.372c.85.015 1.275.022 1.613.219c.337.196.548.551.968 1.262l.542.916c.483.816 1.69.816 2.174 0M15.53 8.47a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 0 1-1.05.011l-2-1.92a.75.75 0 1 1 1.04-1.082l1.47 1.411l3.48-3.48a.75.75 0 0 1 1.06 0"
+												clip-rule="evenodd" />
+										</svg>
+										<h6 class="value__content">
+											Clear explanations without jargon
+										</h6>
+									</div>
+									<p class="value__item-description">
+										I break down complex concepts into simple, everyday language
+										so you never feel lost.
+									</p>
+								</li>
+								<li class="value__item backdrop">
+									<div class="value__item-top">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.737 4 21.277 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648z" />
+										</svg>
+										<h6 class="value__content">
+											Real examples you can try immediately
+										</h6>
+									</div>
+									<p class="value__item-description">
+										Each post includes practical, copy-paste-ready examples you
+										can use in your own projects.
+									</p>
+								</li>
+								<li class="value__item backdrop">
+									<div class="value__item-top">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M22 8.162v.073c0 .86 0 1.291-.207 1.643s-.584.561-1.336.98l-.793.44c.546-1.848.729-3.834.796-5.532l.01-.221l.002-.052c.651.226 1.017.395 1.245.711c.283.393.283.915.283 1.958m-20 0v.073c0 .86 0 1.291.207 1.643s.584.561 1.336.98l.794.44c-.547-1.848-.73-3.834-.797-5.532l-.01-.221l-.001-.052c-.652.226-1.018.395-1.246.711C2 6.597 2 7.12 2 8.162" />
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M12 2c1.784 0 3.253.157 4.377.347c1.139.192 1.708.288 2.184.874s.45 1.219.4 2.485c-.172 4.349-1.11 9.78-6.211 10.26V19.5h1.43a1 1 0 0 1 .98.804l.19.946H18a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5h2.65l.19-.946a1 1 0 0 1 .98-.804h1.43v-3.534c-5.1-.48-6.038-5.912-6.21-10.26c-.051-1.266-.076-1.9.4-2.485c.475-.586 1.044-.682 2.183-.874A26.4 26.4 0 0 1 12 2m.952 4.199l-.098-.176C12.474 5.34 12.284 5 12 5s-.474.34-.854 1.023l-.098.176c-.108.194-.162.29-.246.354c-.085.064-.19.088-.4.135l-.19.044c-.738.167-1.107.25-1.195.532s.164.577.667 1.165l.13.152c.143.167.215.25.247.354s.021.215 0 .438l-.02.203c-.076.785-.114 1.178.115 1.352c.23.174.576.015 1.267-.303l.178-.082c.197-.09.295-.135.399-.135s.202.045.399.135l.178.082c.691.319 1.037.477 1.267.303s.191-.567.115-1.352l-.02-.203c-.021-.223-.032-.334 0-.438s.104-.187.247-.354l.13-.152c.503-.588.755-.882.667-1.165c-.088-.282-.457-.365-1.195-.532l-.19-.044c-.21-.047-.315-.07-.4-.135c-.084-.064-.138-.16-.246-.354"
+												clip-rule="evenodd" />
+										</svg>
+										<h6 class="value__content">
+											Beginner-friendly learning approach
+										</h6>
+									</div>
+									<p class="value__item-description">
+										Everything is structured to help you learn step-by-step—even
+										if you're just starting out.
+									</p>
+								</li>
+								<li class="value__item backdrop">
+									<div class="value__item-top">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M7.75 2.5a.75.75 0 0 0-1.5 0v1.58c-1.44.115-2.384.397-3.078 1.092c-.695.694-.977 1.639-1.093 3.078h19.842c-.116-1.44-.398-2.384-1.093-3.078c-.694-.695-1.639-.977-3.078-1.093V2.5a.75.75 0 0 0-1.5 0v1.513C15.585 4 14.839 4 14 4h-4c-.839 0-1.585 0-2.25.013z" />
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M22 12c0-.839 0-1.585-.013-2.25H2.013C2 10.415 2 11.161 2 12v2c0 3.771 0 5.657 1.172 6.828S6.229 22 10 22h4c3.771 0 5.657 0 6.828-1.172S22 17.771 22 14zm-8 .25A1.75 1.75 0 0 0 12.25 14v2a1.75 1.75 0 1 0 3.5 0v-2A1.75 1.75 0 0 0 14 12.25m0 1.5a.25.25 0 0 0-.25.25v2a.25.25 0 1 0 .5 0v-2a.25.25 0 0 0-.25-.25m-3.213-1.443a.75.75 0 0 1 .463.693v4a.75.75 0 0 1-1.5 0v-2.19l-.22.22a.75.75 0 0 1-1.06-1.06l1.5-1.5a.75.75 0 0 1 .817-.163"
+												clip-rule="evenodd" />
+										</svg>
+										<h6 class="value__content">
+											Consistent content focused on growth
+										</h6>
+									</div>
+									<p class="value__item-description">
+										You get regular posts designed to help you improve a little
+										every day.
+									</p>
+								</li>
+								<li class="value__item backdrop">
+									<div class="value__item-top">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464m10.024 2.982a.75.75 0 0 1 .53.918l-2.588 9.66a.75.75 0 0 1-1.449-.389l2.589-9.659a.75.75 0 0 1 .918-.53M14.97 8.47a.75.75 0 0 1 1.06 0l.209.208c.635.635 1.165 1.165 1.529 1.642c.384.504.654 1.036.654 1.68s-.27 1.176-.654 1.68c-.364.477-.894 1.007-1.53 1.642l-.208.208a.75.75 0 1 1-1.06-1.06l.171-.172c.682-.682 1.139-1.14 1.434-1.528c.283-.37.347-.586.347-.77s-.064-.4-.347-.77c-.295-.387-.752-.846-1.434-1.528l-.171-.172a.75.75 0 0 1 0-1.06m-7 0a.75.75 0 0 1 1.06 1.06l-.171.172c-.682.682-1.138 1.14-1.434 1.528c-.283.37-.346.586-.346.77s.063.4.346.77c.296.387.752.846 1.434 1.528l.172.172a.75.75 0 1 1-1.061 1.06l-.208-.208c-.636-.635-1.166-1.165-1.53-1.642c-.384-.504-.653-1.036-.653-1.68s.27-1.176.653-1.68c.364-.477.894-1.007 1.53-1.642z"
+												clip-rule="evenodd" />
+										</svg>
+										<h6 class="value__content">
+											Lessons backed by real coding practice
+										</h6>
+									</div>
+									<p class="value__item-description">
+										Every tutorial is tested in real code so you can trust what
+										you learn actually works.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
 					<section class="blog">
 						<div class="blog__wrapper container">
 							<div class="blog__inner">
@@ -75,17 +210,18 @@
 										<button class="all__categories active" data-category="all">
 											All categories
 										</button>
-										<button class="company" data-category="company">
-											Company
+										<button class="development" data-category="development">
+											Web Development
 										</button>
-										<button class="engineering" data-category="engineering">
-											Engineering
+										<button class="node" data-category="node">Node.js</button>
+										<button class="tech" data-category="tech">
+											Tech Simplified
 										</button>
-										<button class="jobs" data-category="jobs">
-											Job opportunities
+										<button class="linux" data-category="linux">
+											Linux & Tools
 										</button>
-										<button class="insights" data-category="insights">
-											Insights
+										<button class="learning" data-category="learning">
+											Learning Journey
 										</button>
 									</div>
 								</div>
@@ -202,8 +338,200 @@
 							</div>
 						</div>
 					</section>
+
+					<section class="more">
+						<div class="more__wrapper container">
+							<h2 class="more__title">More Posts</h2>
+							<div class="more__posts">
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+								<figure class="more__post">
+									<img src="./assets/glenn.webp" alt="" />
+									<figcaption class="more__content">
+										<div class="more__content-top">
+											<span class="more__date">Nov 28, 2025</span>
+											<span class="dot"></span>
+											<span class="more__tag">Web Dev.</span>
+										</div>
+										<h6 class="more__title">
+											Things I Wish I Knew When Starting Programming
+										</h6>
+										<span class="more__description">10 min read</span>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<section class="jobs">
+						<div class="jobs__wrapper"></div>
+					</section>
 				</main>
 			</div>
+			<footer class="footer backdrop">
+				<div class="footer__wrapper container">
+					<div class="footer__content">
+						<span id="year"></span>Arogunmasa Abdulwaheed A. Built with
+						practical examples.
+					</div>
+					<div class="footer__ctas">
+						<a href="#" class="footer__cta">Privacy</a>
+						<a href="#" class="footer__cta">Contact</a>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 		<script src="script.js"></script>
